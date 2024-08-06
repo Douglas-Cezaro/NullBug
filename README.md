@@ -31,24 +31,27 @@ curl -X POST http://localhost:3000/accounts \
 
 ```json
 {
-  "data": {
-    "id": "1",
-    "type": "account",
-    "attributes": {
-      "id": 1,
-      "name": "Douglas Cezaro",
-      "birth_date": "2000-08-10",
-      "document_url": "/uploads/account/document/1/logo.png"
-    }
-  }
+	"account": {
+		"data": {
+			"id": "7",
+			"type": "account",
+			"attributes": {
+				"id": 7,
+				"name": "Douglas Cezaro2",
+				"birth_date": "0010-08-02",
+				"document_url": "/uploads/account/document/7/logo.png"
+			}
+		}
+	},
+	"password": "52670f478c8b6504"
 }
 ```
 
 ### 2. **Listar Contas**
 
-**Endpoint:** `GET /accounts`
+**Endpoint:** `GET /accounts/{account_id}`
 
-**Descrição:** Lista todas as contas.
+**Descrição:** Lista detalhes da contas.
 
 **Requisição:**
 
@@ -64,19 +67,16 @@ curl -X GET http://localhost:3000/accounts
 
 ```json
 {
-  "data": [
-    {
-      "id": "1",
-      "type": "account",
-      "attributes": {
-        "id": 1,
-        "name": "Douglas Cezaro",
-        "birth_date": "2000-08-10",
-        "document_url": "/uploads/account/document/1/logo.png"
-      }
-    }
-  ]
-}
+	"data": {
+		"id": "1",
+		"type": "account",
+		"attributes": {
+			"id": 1,
+			"name": "Douglas Cezaro",
+			"birth_date": "2000-08-10",
+			"document_url": "/uploads/account/document/1/logo.png"
+		}
+	}
 ```
 
 ### 3. **Criar Transação**

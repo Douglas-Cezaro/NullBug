@@ -1,6 +1,6 @@
-# API Desfaio
+# API Desafio
 
-Este projeto fornece uma API para gerenciar contas e transações. Os principais endpoints disponíveis são para criar contas, listar contas, e criar e listar transações associadas a contas.
+Este projeto é para o desafio e fornece uma API para gerenciar contas e transações. Os principais endpoints disponíveis são para criar contas, listar contas, e criar e listar transações associadas a contas.
 
 ## Endpoints
 
